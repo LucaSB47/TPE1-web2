@@ -12,67 +12,73 @@ if (!empty($_GET['action'])) {
 
 $params = explode('/', $action);
 
-$GameController = new GameController();
-$GeneroController = new GeneroController();
-$authController = new AuthController();
-
-
 
 
 $params = explode('/', $action);
 
 switch ($params[0]) {
     case 'list':
+        $GameController = new GameController();
         $GameController->showAll();
         break;
     case 'login':
+        $authController = new AuthController();
         $authController->showFormLogin();
         break;
     case 'logout':
+        $authController = new AuthController();
         $authController->logout();
         break;
-    case 'register':
-        $authController->showRegister();
-        break;
     case 'addgame':
+        $GameController = new GameController();
         $GameController->addGame();
         break;
     case 'addGnero':
+        $GeneroController = new GeneroController();
         $GeneroController->addGnero();
         break;
     case 'game':
         $id = $params[1];
+        $GameController = new GameController();
         $GameController->ShowDescriptionGame($id); 
         break;
     case 'validate':
+        $authController = new AuthController();
         $authController->validateUser();
         break;
     case 'delete':
         $id = $params[1];
+        $GameController = new GameController();
         $GameController->deleteGame($id);
         break;
     case 'deleteGenero':
         $id = $params[1];
+        $GeneroController = new GeneroController();
         $GeneroController->deleteGenero($id);
         break;
     case 'genero':
         $idg = $params[1];
+        $GameController = new GameController();
         $GameController->GeneroList($idg);
         break;
     case 'editgeneroForm':
         $idg = $params[1];
+        $GeneroController = new GeneroController();
         $GeneroController->ShowFormGenero($idg);
         break;
     case 'editGenero':
         $idg = $params[1];
+        $GeneroController = new GeneroController();
         $GeneroController->editGenero($idg); 
         break;
     case 'editInputs':
         $id = $params[1];
+        $GameController = new GameController();
         $GameController->showFormGame($id);
         break;
     case 'editGame':
         $id = $params[1];
+        $GameController = new GameController();
         $GameController->editGame($id);
         break;
     default:

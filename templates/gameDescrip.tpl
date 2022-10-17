@@ -15,7 +15,7 @@
 
                     <p>Calificacion: {$juego->calificacion} </p>
 
-                    <p>Precio: {$juego->precio} </p>
+                    <p>Precio: {$juego->precio} $ </p>
                     
                 
                 </div>
