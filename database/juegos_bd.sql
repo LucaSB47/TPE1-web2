@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-10-2022 a las 17:39:42
+-- Tiempo de generación: 17-10-2022 a las 19:45:56
 -- Versión del servidor: 10.4.24-MariaDB
 -- Versión de PHP: 8.1.6
 
@@ -42,12 +42,12 @@ CREATE TABLE `games` (
 --
 
 INSERT INTO `games` (`id`, `nombre`, `descripcion`, `genero_id`, `calificacion`, `precio`, `imagen`) VALUES
-(28, 'Apex legend ', 'Apex Legends es un videojuego gratuito perteneciente a los géneros battle royale y hero shooter en primera persona, desarrollado por Respawn Entertainment y publicado por Electronic Arts. Fue lanzado para Microsoft Windows, PlayStation 4 y Xbox One el 4 d', 1, 10, 100, 'img/game/6340636368204.jpg'),
-(29, 'Minecraft', 'juego de cubos', 2, 5, 26, 'img/game/6340675583dcb.jpg'),
-(31, 'Roblox', 'Juego para pros', 1, 10, 100, 'img/game/6340ab92db1d7.jpg'),
-(32, 'god of war', 'esta buenisimo', 5, 10, 100, 'img/game/63473563c240c.jpg'),
-(33, 'jack and dexter 3', 'no lo conozco este', 2, 5, 0, 'img/game/6347368f5aa2c.jpg'),
-(34, 'lego batman', 'si lego', 2, 1, 10000, 'img/game/634741fde34d3.jpg'),
+(28, 'Apex legend ', 'Apex Legends es un videojuego gratuito perteneciente a los géneros battle royale y hero shooter en primera persona, desarrollado por Respawn Entertainment y publicado por Electronic Arts. Fue lanzado para Microsoft Windows, PlayStation 4 y Xbox One el 4 d', 6, 10, 100, 'img/game/6340636368204.jpg'),
+(29, 'Minecraft', 'Minecraft es un videojuego de construcción de tipo «mundo abierto» o sandbox creado originalmente por el sueco Markus Persson, ​ y posteriormente desarrollado por Mojang Studios.​', 2, 10, 26, 'img/game/6340675583dcb.jpg'),
+(31, 'Roblox', 'Roblox​ es una plataforma de videojuegos en línea dónde los usuarios pueden crear sus propios mundos virtuales con el sistema de creación de juegos llamado Roblox Studio, desarrollado por Roblox Corporation y disponible en ordenadores, teléfonos móviles y', 1, 4, 100, 'img/game/6340ab92db1d7.jpg'),
+(32, 'god of war', 'God of War es una franquicia de videojuegos hack and slash creada por SCE Santa Monica Studio y distribuida por Sony Computer Entertainment.', 5, 10, 100, 'img/game/63473563c240c.jpg'),
+(33, 'jack and dexter 3', 'Jak 3 es un videojuego de plataformas de acción-aventura desarrollado por Naughty Dog y distribuido por Sony Computer Entertainment. El título, precedido por Jak II, es el tercer juego de la serie Jak and Daxter. Fue lanzado en Norteamérica el 9 de noviem', 1, 1, 0, 'img/game/6347368f5aa2c.jpg'),
+(34, 'lego batman', 'Hay grandes cambios que amenazan a Gotham, pero si Batman busca salvar a la ciudad de la incursión hostil del Guasón, deberá considerar en dejar su lucha solitaria y tratar de trabajar con otros para aligerar la batalla.', 1, 5, 10000, 'img/game/634741fde34d3.jpg'),
 (35, 'the last of us', 'The Last of Us es un videojuego de terror y de acción y aventura desarrollado por la compañía estadounidense Naughty Dog y distribuido por Sony Computer Entertainment para la consola PlayStation 3 en 2013.', 5, 10, 1000, 'img/game/63474ea2e56bd.jpg');
 
 -- --------------------------------------------------------
