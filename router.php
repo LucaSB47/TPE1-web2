@@ -10,8 +10,6 @@ if (!empty($_GET['action'])) {
     $action = $_GET['action'];
 }
 
-$params = explode('/', $action);
-
 
 
 $params = explode('/', $action);
