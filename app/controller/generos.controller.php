@@ -33,7 +33,7 @@ class GeneroController{
     public function ShowFormGenero($idg){
         $this->helper->checkLoggedIn();
         $genero = $this->generos_model->getGeneroById($idg);
-        $this->generos_view->showFormGame($genero);
+        $this->generos_view->ShowFormGenro($genero);
         
     }
 

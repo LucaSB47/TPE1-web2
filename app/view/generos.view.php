@@ -8,7 +8,7 @@ class GenerosView {
         $this->smarty = new Smarty();
     }
 
-    public function showFormGame($genero){
+    public function ShowFormGenro($genero){
         $this->smarty->assign('generos',$genero);
         $this->smarty->display('editFormGenero.tpl');
     }
